@@ -13,8 +13,8 @@ import androidx.lifecycle.ViewModelProvider
 class EditorActivity : AppCompatActivity() {
 
     private lateinit var viewModel: NotePadViewModel
-    lateinit var inputText : EditText
-    lateinit var INTENT: Intent
+    private lateinit var inputText : EditText
+    private lateinit var INTENT: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +25,7 @@ class EditorActivity : AppCompatActivity() {
         val note : String? = INTENT.getStringExtra("text")
         inputText.setText(note)
         viewModel = ViewModelProvider(this,
-            ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(NotePadViewModel::class.java)
+            ViewModelProvider.AndroidViewModelFactory.getInstance(application))[NotePadViewModel::class.java]
 
     }
 

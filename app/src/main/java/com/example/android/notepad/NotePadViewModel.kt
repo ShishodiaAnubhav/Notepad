@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 
 class NotePadViewModel(application: Application) : AndroidViewModel(application) {
     val allNotes: LiveData<List<NotePad>>
-    val repository: NotePadRepo
+    private val repository: NotePadRepo
 
     init {
         val dao = NotePadDatabase.getDatabase(application).getNotePadDoa()
