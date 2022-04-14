@@ -1,5 +1,5 @@
 # Notepad
-NoteMaker is an Android application for keeping notes using **MVVM** model.
+NotePad is an Android application for keeping notes using **MVVM** model.
 Android architecture components used-LiveData, RoomDatabase and ViewModel.
 
 This ApplicationUsed to ***Save, Edit and Delete*** the Notes from the User.
